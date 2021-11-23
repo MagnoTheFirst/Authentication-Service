@@ -1,0 +1,58 @@
+POST http://localhost:8081/api/v1/
+Content-Type: application/json
+
+{
+  "email":"al@gmail.com",
+  "password": "Test12345-"
+}
+
+###
+GET http://localhost:8083/api/v1/createuser
+###
+POST http://localhost:8083/api/v1/newSession
+Content-Type: application/json
+
+{
+  "id": "55ffe178-c544-4a17-9b7b-6f87cff9754c",
+  "firstname": "ale",
+  "lastname": "laneri",
+  "email": "bla@gmail",
+  "password": "test12345",
+  "username": "magno"
+}
+
+###
+
+GET http://localhost:8081/api/v1/users
+###
+GET http://localhost:8083/api/v1/diceValue
+
+###
+GET http://localhost:8083/api/v1/searchSession
+
+###
+
+GET http://localhost:8083/api/v1/session/000c0efd-2322-4435-b66b-b67c258379e0
+
+###
+
+POST http://localhost:8084/api/v1/hello
+Content-Type: application/json
+
+{
+  "firstname":"Alejandro",
+  "lastname":"laneri",
+  "email":"alejandro@laneri.com",
+  "password":"password"
+}
+###
+
+POST http://localhost:8084/api/v1/registration
+Content-Type: application/json
+
+{
+    "firstname":"Alejandro",
+    "lastname":"laneri",
+    "email":"alejandro@laneri.com",
+    "password":"password"
+}
