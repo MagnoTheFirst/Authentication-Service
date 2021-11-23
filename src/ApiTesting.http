@@ -56,3 +56,7 @@ Content-Type: application/json
     "email":"alejandro@laneri.com",
     "password":"password"
 }
+
+###
+
+GET http://localhost:8084/api/v1/registration/confirm?token=6a6d54be-c500-41b5-9c1a-4dae655c314d
