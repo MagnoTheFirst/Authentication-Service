@@ -51,12 +51,12 @@ POST http://localhost:8084/api/v1/registration
 Content-Type: application/json
 
 {
-    "firstname":"Alejandro",
-    "lastname":"laneri",
-    "email":"alejandro@laneri.com",
+    "firstname":"tset",
+    "lastname":"test",
+    "email":"test@test.com",
     "password":"password"
 }
 
 ###
 
-GET http://localhost:8084/api/v1/registration/confirm?token=6a6d54be-c500-41b5-9c1a-4dae655c314d
+GET http://localhost:8084/api/v1/registration/confirm?token=4f141924-b5fa-486a-9ea1-b5f26c3814ad
