@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <title>User Lobby</title>
+</head>
+<body>
+    <h1>Hello </h1>
+    <h1 sec:authentication="principal.firstname">Firstname</h1>
+    <h2>Account information</h2>
+    <span sec:authentication="principal.firstname">firstname</span> <br>
+    <span sec:authentication="principal.lastname">lastname</span> <br>
+    <span sec:authentication="principal.email">Email</span> <br>
+    <span sec:authentication="principal.password">password</span> <br>
+
+</body>
+</html>
