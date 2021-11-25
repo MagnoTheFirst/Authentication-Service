@@ -1,6 +1,7 @@
 package ch.ffhs.uservalidation.registration;
 
 import lombok.AllArgsConstructor;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
