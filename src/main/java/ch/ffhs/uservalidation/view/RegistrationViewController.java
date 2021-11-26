@@ -38,6 +38,15 @@ public class RegistrationViewController {
     }
 
     @CrossOrigin(origins = "*")
+    @GetMapping("userreg1")
+    public String getReg1(Model model)
+    {
+        AppUser user = new AppUser();
+        model.addAttribute("user", user);
+        return "signup";
+    }
+
+    @CrossOrigin(origins = "*")
     @GetMapping("login")
     public String login(Model model)
     {

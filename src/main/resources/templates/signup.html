@@ -7,50 +7,56 @@
         Roll The Dice Registration
     </title>
     <link th:href="@{/css/style.css}" rel="stylesheet" />
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    <scirpt th:src="@{/script.js}"></scirpt>
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css} "/>
+    <style>
+        .jumbotron{text-align: center}
 
-    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+    </style>
 </head>
 
 <body>
 <div class="container text-center">
-    <div>
-        <h1>User Registration - Sign Up</h1>
-    </div>
+
     <form action="#" th:action="@{/api/v1/register/test}" th:object="${user}" method="post" style="max-width: 600px; margin: 0 auto;">
+        <div>
+            <h2 class="form-signin-heading" id="form-header">User Registration - Sign Up</h2>
+        </div>
         <div class="m-3">
             <div class="form-group row">
-                <label class="col-4 col-form-label">Firstname </label>
+                <label class="col-4 col-form-label">Firstname </label> <br>
                 <div class="col-8">
                     <input type="text" th:field="*{firstname}" class="form-control" required /><br/>
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-4 col-form-label">Lastname </label>
+                <label class="col-4 col-form-label">Lastname </label> <br>
                 <div class="col-8">
                     <input type="text" th:field="*{lastname}" class="form-control" required /><br/>
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-4 col-form-label">Email </label>
+                <label class="col-4 col-form-label">Email </label> <br>
                 <div class="col-8">
                     <input type="text" th:field="*{email}" class="form-control" required /><br/>
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-4 col-form-label">Password: </label>
+                <label class="col-4 col-form-label">Password: </label> <br>
                 <div class="col-8">
                     <input type="password" th:field="*{password}" class="form-control"
                            required minlength="6" maxlength="10"/>
                 </div>
             </div>
             <div>
-                <button type="submit" class="btn btn-primary">Sign Up</button>
+                <button class="btn btn-lg btn-primary btn-block" type="submit" data-dashlane-label="true" data-dashlane-rid="5bb416dab23605a5" data-form-type="action,login">Sign in</button>
             </div>
         </div>
     </form>
 </div>
+
+<script th:src="@{/webjars/jquery/3.0.0/jquery.min.js}"></script>
+<script th:src="@{/webjars/popper.js/1.12.9-1/umd/popper.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/4.0.0-2/js/bootstrap.min.js}"></script>
 </body>
 </html>

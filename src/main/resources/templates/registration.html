@@ -7,11 +7,8 @@
     Roll The Dice Registration
   </title>
   <link th:href="@{/css/style.css}" rel="stylesheet" />
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
-
-  <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
-  <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+  <scirpt th:src="@{/script.js}"></scirpt>
+  <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css} "/>
 </head>
 
 <body>
@@ -52,5 +49,8 @@
     </div>
   </form>
 </div>
+<script th:src="@{/webjars/jquery/3.0.0/jquery.min.js}"></script>
+<script th:src="@{/webjars/popper.js/1.12.9-1/umd/popper.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/4.0.0-2/js/bootstrap.min.js}"></script>
 </body>
 </html>

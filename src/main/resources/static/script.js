@@ -1,4 +1,3 @@
-
-$(document).ready(function(){
+$(document).onload(function(){
     alert('hello world');
 });
